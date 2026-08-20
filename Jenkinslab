@@ -1,14 +1,14 @@
 pipeline {
 agent any
 stages {
-stage('compile') {
+stage('Compile') {
 steps {
 sh 'javac Addition.java'
 }
 }
-stage('run') {
+stage('Run') {
 steps {
-sh 'java helloworld'
+sh 'java Addition'
 }
 }
 }
